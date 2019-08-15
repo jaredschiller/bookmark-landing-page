@@ -1,0 +1,36 @@
+.navigation {
+  padding: 4rem 0;
+  display: flex;
+  align-items: center;
+
+  background-color: lightcoral;
+  
+  &--top {
+    justify-content: space-between;
+    
+  }  
+
+  &__logo-box {
+    background-color: grey;
+  }
+
+  &__logo-image {
+    
+  }
+
+  &__list {
+      margin-right: 20rem;
+
+      background-color: lightgreen;
+  }
+
+  &__item {
+    display: inline-block;
+
+    background-color: lightblue;
+  }
+
+  &__link {
+
+  }
+}
