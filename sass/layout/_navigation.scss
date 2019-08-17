@@ -1,17 +1,16 @@
 .navigation {
-  padding: 4rem 0;
+  @include max-width-content;
   display: flex;
   align-items: center;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 
-  background-color: lightcoral;
-  
   &--top {
     justify-content: space-between;
-    
   }  
 
   &__logo-box {
-    background-color: grey;
+
   }
 
   &__logo-image {
@@ -19,18 +18,23 @@
   }
 
   &__list {
-      margin-right: 20rem;
 
-      background-color: lightgreen;
   }
 
   &__item {
     display: inline-block;
 
-    background-color: lightblue;
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
   }
 
   &__link {
-
+    font-size: 1.35rem;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $very-dark-blue;
   }
-}
+}//End .navigation
