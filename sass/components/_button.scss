@@ -6,7 +6,6 @@
     font-family: inherit;
     font-size: 1.35rem;
     text-decoration: none;
-    padding: 1.2rem 3rem;
     border-radius: .5rem;
     box-shadow: 0px .4rem .7rem rgba(0, 0, 0, 0.2);
     font-weight: 500;
@@ -14,7 +13,7 @@
 
   &--blue {
     background-color: $primary-soft-blue;
-    color: $pinkish-white;
+    color: $blueish-white;
   }
 
   &--red {
@@ -23,12 +22,15 @@
   }
 
   &--grey {
-    background-color: $greyish-blue;
-    color: black;
+    background-color: $light-grey;
+    color: $dark-gray;
   }
 
-  &--uppercase {
-    letter-spacing: 2px;
-    text-transform: uppercase;
+  &--longer {
+    padding: 1.2rem 3rem;
+  }
+
+  &--taller {
+    padding: 1.4rem 2rem;
   }
 } //End .btn

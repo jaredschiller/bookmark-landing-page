@@ -12,3 +12,26 @@
     background-color: $very-dark-blue;
   }
 }
+
+.header {
+  @include max-width-content;
+  display: flex;
+  flex-direction: row;
+  padding-top: 6rem;
+
+
+  &__text-box {
+
+  }
+
+  &__paragraph {
+
+  }
+
+  &__image-box {
+    width: 49%;
+    transform: translateX(2rem);
+    
+  }
+
+}
