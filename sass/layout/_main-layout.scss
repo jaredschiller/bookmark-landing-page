@@ -1,7 +1,13 @@
 .background-container {
+  position: relative;
 
   &--clear {
     background-color: transparent;
+  }
+
+  
+  &--white {
+    background-color: $color-white;
   }
 
   &--blue {
