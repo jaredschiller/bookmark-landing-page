@@ -1,0 +1,14 @@
+.background-container {
+
+  &--clear {
+    background-color: transparent;
+  }
+
+  &--blue {
+    background-color: $primary-soft-blue;
+  }
+  
+  &--dark-blue {
+    background-color: $very-dark-blue;
+  }
+}

@@ -64,6 +64,62 @@ body {
 .btn--taller {
   padding: 1.4rem 2rem; }
 
+.header {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 17rem;
+  padding-right: 17rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 6rem;
+  padding-right: 0;
+  border: 1px solid green; }
+  .header__text-box {
+    max-width: 50rem;
+    border: 1px solid blue; }
+  .header__image-box {
+    position: relative;
+    z-index: 1;
+    padding-right: 5rem;
+    border: 1px solid orange; }
+  .header__image {
+    position: relative;
+    width: 100%; }
+  .header__decoration-box {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 70%;
+    height: 66%;
+    border: 1px solid red; }
+  .header__decoration-circle-container {
+    height: 100%;
+    width: 62.813959%; }
+  .header__decoration-circle {
+    background-color: #5368df;
+    clip-path: circle(50% at 50% 50%);
+    height: 100%; }
+  .header__decoration-rectangle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #5368df;
+    height: 100%;
+    width: 66.3%;
+    transform: translateX(-0.4rem); }
+
+.background-container--clear {
+  background-color: transparent; }
+
+.background-container--blue {
+  background-color: #5368df; }
+
+.background-container--dark-blue {
+  background-color: #252b46; }
+
 .navigation {
   max-width: 1440px;
   margin: 0 auto;
@@ -72,8 +128,7 @@ body {
   display: flex;
   align-items: center;
   padding-top: 6rem;
-  padding-bottom: 6rem;
-  background-color: tomato; }
+  padding-bottom: 6rem; }
   .navigation--top {
     justify-content: space-between; }
   .navigation__item {
@@ -87,24 +142,3 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     color: #252b46; }
-
-.background-container--clear {
-  background-color: transparent; }
-
-.background-container--blue {
-  background-color: #5368df; }
-
-.background-container--dark-blue {
-  background-color: #252b46; }
-
-.header {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding-left: 17rem;
-  padding-right: 17rem;
-  display: flex;
-  flex-direction: row;
-  padding-top: 6rem; }
-  .header__image-box {
-    width: 49%;
-    transform: translateX(2rem); }
