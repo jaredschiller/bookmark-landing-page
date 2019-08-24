@@ -16,11 +16,17 @@ body {
 .heading-secondary {
   font-size: 3.5rem;
   font-weight: 500;
-  color: #000;
+  color: $color-black;
+}
 
+.heading-tertiary {
+  font-size: 2rem;
+  font-weight: 500;
+  color: $color-black;
 }
 
 .paragraph {
+  display: inline-block;
   font-size: $default-font-size;
   line-height: 1.5;
 
