@@ -3,21 +3,25 @@
    justify-content: center;
 
 
+
    
 }
 
 
 
 .section-download {
-   display: flex;
-   justify-content: center;
-
-   background-color: rgb(243, 243, 243);
+   @include max-width-content;
+   padding: 0;
 
    &__browser-cards {
-
+      display: flex;
+      justify-content: space-evenly;
+      margin: 0 auto;
+      max-width: 92rem;
    }
 }
+
+
 
 .section-faq {
    display: flex;
