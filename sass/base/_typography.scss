@@ -21,10 +21,16 @@ body {
   &--white {
     color: $color-white
   }
+}
 
+.heading-tertiary {
+  font-size: 2rem;
+  font-weight: 500;
+  color: $color-black;
 }
 
 .paragraph {
+  display: inline-block;
   font-size: $default-font-size;
   line-height: 1.5;
   color: inherit;
