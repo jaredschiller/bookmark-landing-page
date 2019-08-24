@@ -26,3 +26,28 @@
 
 
 }
+
+
+.section-subscribe {
+   @include max-width-content;
+   padding-top: 6rem;
+   padding-bottom: 6rem;
+   color: $color-white;
+   text-align: center;
+}
+
+.subscribe__stat {
+   text-transform: uppercase;
+   letter-spacing: .5rem;
+   font-size: 1.2rem;
+   font-weight: 400;
+}
+
+.subscribe__stat + h2 {
+   max-width: 42rem;
+   margin: 0 auto;
+}
+
+.subscribe-form {
+
+}

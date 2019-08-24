@@ -76,13 +76,16 @@ body {
   line-height: 1.2; }
 
 .heading-secondary {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   font-weight: 500;
-  color: #000; }
+  color: #202a45; }
+  .heading-secondary--white {
+    color: #fff; }
 
 .paragraph {
   font-size: 1.8rem;
-  line-height: 1.5; }
+  line-height: 1.5;
+  color: inherit; }
   .paragraph--h2 {
     max-width: 54rem; }
 
@@ -213,3 +216,23 @@ body {
 .section-faq {
   display: flex;
   justify-content: center; }
+
+.section-subscribe {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 17rem;
+  padding-right: 17rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  color: #fff;
+  text-align: center; }
+
+.subscribe__stat {
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  font-size: 1.2rem;
+  font-weight: 400; }
+
+.subscribe__stat + h2 {
+  max-width: 42rem;
+  margin: 0 auto; }
