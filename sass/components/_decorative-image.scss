@@ -1,0 +1,39 @@
+.decorative-image {
+   position: relative;
+   z-index: 1;
+   padding-right: 5rem;
+ 
+   &__image {
+      position: relative;
+      width: 100%;
+   }
+
+   &__decoration-box {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+      width: 74%;
+      height: 70%;
+   }
+
+   &__decoration-circle-container {
+      height: 100%;
+      width: 62.875%; // height/width: 329.69px 
+   }
+
+   &__decoration-circle { 
+      background-color: $primary-soft-blue;
+      clip-path: circle(50% at 50% 50%);
+      height: 100%;
+   }
+
+   &__decoration-rectangle {
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-color: $primary-soft-blue;
+      height: 100%;
+      width: 68.4912%; // width of rectangle: 358.327px
+   }
+}
