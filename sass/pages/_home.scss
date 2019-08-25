@@ -1,8 +1,13 @@
 .section-features {
-   display: flex;
-   justify-content: center;
+   max-width: 1440px; //change to em?
+   margin: 0 auto;
 
-
+   &__menu-box {
+      display: flex;
+      justify-content: center;
+      max-width: 74rem;
+      margin: 0 auto;
+   }
 
    
 }
