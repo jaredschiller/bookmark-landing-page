@@ -10,6 +10,10 @@
     box-shadow: 0px .4rem .7rem rgba(0, 0, 0, 0.2);
     font-weight: 500;
     display: inline-block;
+
+    //For <button> element
+    border: none;
+    cursor: pointer;
   }
 
   &--blue {
@@ -25,6 +29,10 @@
   &--grey {
     background-color: $light-grey;
     color: $dark-grey;
+  }
+
+  &--normal {
+    padding: 1.2rem 2rem;
   }
 
   &--longer {

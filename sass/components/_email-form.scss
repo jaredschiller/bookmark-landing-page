@@ -1,0 +1,28 @@
+.email-form {
+    font-family: inherit;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+
+  &__email {
+  padding: 1.5rem 11rem 1.5rem 2rem;
+  margin-right: 1rem;
+  border-radius: .5rem;
+  border: none;
+  font-size: inherit;
+  font-weight: inherit;
+  color: $color-black;
+  
+    &::placeholder {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: rgba($greyish-blue, .6);
+    }
+  }//End .email-form__email
+
+  &__submit {
+    padding: 1.5rem 2rem;
+    font-size: 1.35rem;
+    font-weight: 500;
+  }
+}//End .email-form
