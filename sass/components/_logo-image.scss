@@ -1,0 +1,19 @@
+
+.logo-image {
+
+  &__circle {
+    fill: $primary-soft-blue
+  }
+
+  &__bookmark-shape--white {
+    fill: $color-white;
+  }
+
+  &__name--white {
+    fill: $color-white;
+  }
+
+  &__name--black {
+    fill: $color-black;
+  }
+}
