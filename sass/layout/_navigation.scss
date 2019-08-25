@@ -2,20 +2,31 @@
   @include max-width-content;
   display: flex;
   align-items: center;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+
 
   &--top {
     justify-content: space-between;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     margin-bottom: 6rem;
+    color: $color-black;
+
+  }  
+
+  &--bottom {
+    justify-content: flex-start;
+    color: $color-white;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
   }  
 
   &__logo-box {
-
+    
   }
 
   &__logo-image {
-    
+    margin-right: 6rem;
+    transform: translateY(.2rem);
   }
 
   &__list {
@@ -36,6 +47,14 @@
     letter-spacing: 1.4px;
     text-decoration: none;
     text-transform: uppercase;
-    color: $very-dark-blue;
+    color: inherit;
+  }
+
+  &__social-list {
+    margin-left: auto;
   }
 }//End .navigation
+
+
+
+
