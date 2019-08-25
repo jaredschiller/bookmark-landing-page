@@ -14,9 +14,13 @@ body {
 }
 
 .heading-secondary {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   font-weight: 500;
   color: $color-black;
+
+  &--white {
+    color: $color-white
+  }
 }
 
 .heading-tertiary {
@@ -29,8 +33,11 @@ body {
   display: inline-block;
   font-size: $default-font-size;
   line-height: 1.5;
+  color: inherit;
 
   &--h2 {
     max-width: 54rem;
   }
 }
+
+

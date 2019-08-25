@@ -30,3 +30,24 @@
 
 
 }
+
+
+.section-subscribe {
+   @include max-width-content;
+   padding-top: 7rem;
+   padding-bottom: 7rem;
+   color: $color-white;
+   text-align: center;
+
+   &__stat {
+      text-transform: uppercase;
+      letter-spacing: .5rem;
+      font-size: 1.2rem;
+      font-weight: 400;
+
+      & + h2 {
+         max-width: 42rem;
+         margin: 0 auto;
+      }
+   }//End __stat
+}

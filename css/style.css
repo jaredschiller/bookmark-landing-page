@@ -88,9 +88,11 @@ body {
   line-height: 1.2; }
 
 .heading-secondary {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   font-weight: 500;
   color: #202a45; }
+  .heading-secondary--white {
+    color: #fff; }
 
 .heading-tertiary {
   font-size: 2rem;
@@ -100,7 +102,8 @@ body {
 .paragraph {
   display: inline-block;
   font-size: 1.8rem;
-  line-height: 1.5; }
+  line-height: 1.5;
+  color: inherit; }
   .paragraph--h2 {
     max-width: 54rem; }
 
@@ -111,7 +114,9 @@ body {
   border-radius: .5rem;
   box-shadow: 0px 0.4rem 0.7rem rgba(0, 0, 0, 0.2);
   font-weight: 500;
-  display: inline-block; }
+  display: inline-block;
+  border: none;
+  cursor: pointer; }
 
 .btn--blue {
   background-color: #5368df;
@@ -124,6 +129,9 @@ body {
 .btn--grey {
   background-color: #f7f7f7;
   color: #616064; }
+
+.btn--normal {
+  padding: 1.2rem 2rem; }
 
 .btn--longer {
   padding: 1.2rem 3rem; }
@@ -186,6 +194,28 @@ body {
     background-color: #5368df;
     height: 100%;
     width: 68.4912%; }
+
+.email-form {
+  font-family: inherit;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: 500; }
+  .email-form__email {
+    padding: 1.5rem 11rem 1.5rem 2rem;
+    margin-right: 1rem;
+    border-radius: .5rem;
+    border: none;
+    font-size: inherit;
+    font-weight: inherit;
+    color: #202a45; }
+    .email-form__email::placeholder {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: rgba(145, 148, 161, 0.6); }
+  .email-form__submit {
+    padding: 1.5rem 2rem;
+    font-size: 1.35rem;
+    font-weight: 500; }
 
 .header {
   max-width: 1440px;
@@ -265,3 +295,21 @@ body {
 .section-faq {
   display: flex;
   justify-content: center; }
+
+.section-subscribe {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 17rem;
+  padding-right: 17rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  color: #fff;
+  text-align: center; }
+  .section-subscribe__stat {
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    font-size: 1.2rem;
+    font-weight: 400; }
+    .section-subscribe__stat + h2 {
+      max-width: 42rem;
+      margin: 0 auto; }
