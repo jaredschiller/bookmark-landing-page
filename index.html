@@ -53,7 +53,7 @@
 
       </div>
 
-      <div class="decorative-image">
+      <div class="decorative-image decorative-image--right">
         <img class="decorative-image__image" src="images/illustration-hero.svg" alt="An illustration of a computer or device screen with some elements on it">
         <div class="decorative-image__decoration-box"></div>
       </div>
@@ -64,18 +64,20 @@
 
   <main class="main">
 
-    <div class="background-container background-container--clear u-margin-bottom-xxl"><!-- FOR FEATURES BLOCK -->
+    <!-- ====================================================================== -->
+    <!-- FEATURES (TOP) SECTION -->
+    <div class="background-container background-container--clear u-margin-bottom-xl"><!-- FOR TOP FEATURES BLOCK -->
       
-      <div class="section-features">
+      <div class="section-features-top">
           
-        <div class="u-center-text u-margin-bottom-big">
+        <div class="u-center-text u-margin-bottom-medium">
           <h2 class="heading-secondary u-margin-bottom-smedium">Features</h2>
           <p class="paragraph paragraph--h2">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
         </div>
 
-        <ul class="section-features__menu-box u-center-text">
+        <ul class="section-features-top__menu-box u-center-text">
           
-          <li class="feature-menu-item">
+          <li class="feature-menu-item feature-menu-item--active">
             <a href="#" class="feature-menu-item__link">Simple Bookmarking</a>
           </li>
           <li class="feature-menu-item">
@@ -85,19 +87,91 @@
             <a href="#" class="feature-menu-item__link">Easy Sharing</a>
           </li>
 
-        </ul><!--End .section-features__menu-box-->
+        </ul>
 
-        <div class="section-features__bottom-box">
-          <div class="decorative-image"></div>
-          <div class="section-features__text-box"></div>
+      </div><!--End .section-features-top -->
+    </div><!-- END  FEATURES (TOP) SECTION .background-container -->
+
+    <!-- FEATURES (BOTTOM) SECTION -->
+    <div class="background-container background-container--clear u-margin-bottom-xxl">
+      <div class="section-features-bottom">
+
+   
+        <div class="decorative-image decorative-image--left">
+
+            <img class="decorative-image__image" src="/images/illustration-features-tab-1.svg" alt="">
+            <div class="decorative-image__decoration-box"></div>
+  
         </div>
 
+        <div class="section-features-bottom__text-box">
+            <h2 class="heading-secondary">Bookmark in one click</h2>
+            <p class="paragraph u-margin-top-smedium u-margin-bottom-smedium">Organize your bookmarks however you like. Our Simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+            <button class="btn btn--blue btn--normal">More Info</button>
+        </div>
+        
       </div>
+    </div><!-- END FEATURES (BOTTOM) SECTION .background-container -->
+
+
+
+
+  <!-- FEATURES (BOTTOM) SECTION -->
+  <div class="background-container background-container--clear u-margin-bottom-xxl">
+    <div class="section-features-bottom">
+
+ 
+      <div class="decorative-image decorative-image--left">
+
+          <img class="decorative-image__image" src="/images/illustration-features-tab-2.svg" alt="">
+          <div class="decorative-image__decoration-box"></div>
+
+      </div>
+
+      <div class="section-features-bottom__text-box">
+          <h2 class="heading-secondary">Bookmark in one click</h2>
+          <p class="paragraph u-margin-top-smedium u-margin-bottom-smedium">Organize your bookmarks however you like. Our Simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+          <button class="btn btn--blue btn--normal">More Info</button>
+      </div>
+      
+    </div>
+  </div><!-- END FEATURES (BOTTOM) SECTION .background-container -->
+
+
+
+    <!-- FEATURES (BOTTOM) SECTION -->
+    <div class="background-container background-container--clear u-margin-bottom-xxl">
+      <div class="section-features-bottom">
   
-    </div><!-- END FEATURES .background-container -->
+   
+        <div class="decorative-image decorative-image--left">
+  
+            <img class="decorative-image__image" src="/images/illustration-features-tab-3.svg" alt="">
+            <div class="decorative-image__decoration-box"></div>
+  
+        </div>
+  
+        <div class="section-features-bottom__text-box">
+            <h2 class="heading-secondary">Bookmark in one click</h2>
+            <p class="paragraph u-margin-top-smedium u-margin-bottom-smedium">Organize your bookmarks however you like. Our Simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+            <button class="btn btn--blue btn--normal">More Info</button>
+        </div>
+        
+      </div>
+    </div><!-- END FEATURES (BOTTOM) SECTION .background-container -->
+  
 
 
-    <div class="background-container background-container--clear u-margin-bottom-xxl"> <!-- FOR DOWNLOAD BLOCK -->
+
+
+
+
+
+
+
+    <!-- ====================================================================== -->
+    <!-- DOWNLOAD SECTION -->
+    <div class="background-container background-container--clear u-margin-bottom-xxl">
 
       <div class="section-download">
 
@@ -132,7 +206,6 @@
             </div>
 
           </div>
-
 
 
           <div class="browser-card u-center-text">
@@ -192,6 +265,8 @@
     </div><!-- END DOWNLOAD .background-container -->
 
 
+    <!-- ====================================================================== -->
+    <!-- FAQ SECTION -->
     <div class="background-container background-container--clear u-margin-bottom-xl"> <!-- FOR FAQ BLOCK -->
       
       <div class="section-faq">
@@ -207,7 +282,10 @@
 
     </div><!-- END FAQ .background-container -->
 
-    <div class="background-container background-container--blue"><!-- FOR SUBSCRIBE SECTION -->
+
+    <!-- ====================================================================== -->
+    <!-- SUBSCRIBE SECTION -->
+    <div class="background-container background-container--blue">
       
       <div class="section-subscribe">
 
@@ -219,13 +297,15 @@
           <button type="submit" class="btn btn--red email-form__submit">Contact Us</button>
         </form>
 
-      </div><!--END .section-subcribe-->
+      </div>
 
     </div><!-- END SUBSCRIBE .background-container -->
 
   </main>
 
-  <div class="background-container background-container--dark-blue"><!-- For FOOTER SECTION -->
+  <!-- ====================================================================== -->
+  <!-- FOOTER SECTION -->
+  <div class="background-container background-container--dark-blue">
 
     <nav class="navigation navigation--bottom">
 
@@ -250,7 +330,7 @@
         <li class="navigation__item"><a href ="#" class="navigation__link"><img class="navigation__social-icon" src="images/icon-twitter.svg"></a></li>
       </ul>
 
-    </nav><!--END .navigation-->
+    </nav>
 
   </div><!-- END FOOTER .background-container -->
 

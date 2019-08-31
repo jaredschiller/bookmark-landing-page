@@ -3,26 +3,37 @@
   list-style: none;
   box-shadow: inset 0 -.1rem rgba(145,148,161,.2);
   flex: 1;
-  padding: 5rem 0;
+  padding: 3rem 0;
+  color: $dark-grey;
+  
+  &--active {
+    color: $very-dark-blue;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      height: 3px;
+      width: 100%;
+      background-color: $primary-soft-red;
+      transform: translateX(-50%);
+    }
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    border-bottom: .3rem solid transparent;
+    & a:hover {
+      color: $very-dark-blue;
+    }
   }
 
   &__link {
     position: relative;
-    // background-color: pink;
     display: inline-block;
     text-decoration: none;
     width: 100%;
+    color: inherit;
 
-  
+    &:hover {
+      color: $primary-soft-red;
+    }
   }
-  
 }

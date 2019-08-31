@@ -1,22 +1,45 @@
 .decorative-image {
    position: relative;
    z-index: 1;
-   padding-right: 5rem;
- 
+
    &__image {
-      position: relative;
       width: 100%;
+      border: 1px solid red; 
    }
 
    &__decoration-box {
       position: absolute;
       bottom: 0;
-      right: 0;
       z-index: -1;
       width: 74%;
       height: 70%;
       background-color: $primary-soft-blue;
-      border-top-left-radius: 200px;
-      border-bottom-left-radius: 200px;
+   }
+
+   &--right {
+      padding-right: 5rem; //right only
+      & img {
+         width: 100%;
+      }
+
+      & div {
+         right: 0; //right only
+         border-top-left-radius: 200px; //right only
+         border-bottom-left-radius: 200px; //right only
+      }
+   }
+
+   &--left {
+      & img {
+         padding-bottom: 7rem; //left only
+      }
+
+      & div {
+         left: 0; //left only
+         border-top-right-radius: 200px; //left only
+         border-bottom-right-radius: 200px; //left only
+      }
    }
 }
+
+   

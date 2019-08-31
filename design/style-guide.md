@@ -39,3 +39,11 @@ Some library suggestions can be found below:
 - [Font Awesome](https://fontawesome.com)
 - [IcoMoon](https://icomoon.io)
 - [Ionicons](https://ionicons.com)
+
+
+
+## Feature image dimensions:
+
+Img 1: width="536" height="346" //1.549132947976879
+Img 2: width="478" height="416"
+Img 3: width="440" height="380"
