@@ -375,66 +375,52 @@
 
    // FAQ SECTION CODE
    // ================================================================
-      const accordion = document.querySelector('.accordion'),
-            allItems = document.querySelectorAll('.accordion__item');
+      const accordion = document.querySelector('.accordion');
+      let   lastOpened;
 
       // Event handler when user clicks FAQ list
-      accordion.addEventListener('click', (event) => {
-         const currentItem = event.target.closest('.accordion__item'),
-               itemArrow   = currentItem.querySelector('.accordion__arrow'),
-               fullHeight  = getItemHeight(currentItem);
+      accordion.addEventListener('click', toggleFaqItem)
 
-         // If item is already 'open', close it...
-         if (currentItem.classList.contains('open')) {
-            currentItem.style.height = currentItem.scrollHeight + 'px';
+      async function toggleFaqItem(event) {
+         const current = event.target.closest('.accordion__item');
 
-            // Reset styling of current element and remove 'open' class (setTimeout is necessary because JS gets ahead of the DOM update)
-            window.setTimeout(() => {
-               currentItem.style.height = '7rem';
-               currentItem.querySelector('.accordion__arrow').style.transform = 'rotate(0deg)';
-               currentItem.querySelector('.accordion__arrow path').setAttribute('style', 'stroke:#5267DF');
-               currentItem.classList.remove('open');
-            },10)
-         // else, 
-         } else {
-            // Reset styling and remove 'open' class for all other items
-            resetStyles(allItems, currentItem);
-            // Expand height of current item
-            currentItem.style.height = fullHeight;
-            // Change the styles of the arrow icon
-            itemArrow.style.transform = 'rotate(-180deg)';
-            itemArrow.querySelector('path').setAttribute('style', 'stroke: hsl(0, 94%, 66%)');
-            // Add the 'open' class
-            currentItem.classList.add('open');
-         }
+         // If item is currently closed, open it
+         if (!current.classList.contains('open')) {
+            // If their was a previously opened item, close it
+            if (lastOpened) { closeItem(lastOpened); }
+            openItem(current);
+         } else { closeItem(current); } 
+      }
 
-         
+      function openItem(item) {
+         const currentArrow   = item.querySelector('.accordion__arrow'),
+               fullHeight     = getItemHeight(item);
 
-      })
+         item.style.height = fullHeight;
+         currentArrow.style.transform = 'rotate(-180deg)';
+         currentArrow.querySelector('path').setAttribute('style', 'stroke: hsl(0, 94%, 66%)');
 
-      function resetStyles(elements, current) {
-         for (let item of elements) {
-            if (item != current) {
-               item.style.height = '7rem';
-               item.querySelector('.accordion__arrow').style.transform = 'rotate(0deg)';
-               item.querySelector('.accordion__arrow path').setAttribute('style', 'stroke:#5267DF');
-               item.classList.remove('open');
-            }
-         }
+         item.classList.add('open');
+         lastOpened = item;
+      }
+
+      function closeItem(item) {
+         item.style.height = '7rem';
+         item.querySelector('.accordion__arrow').style.transform = 'rotate(0deg)';
+         item.querySelector('.accordion__arrow path').setAttribute('style', 'stroke:#5267DF');
+         item.classList.remove('open');
       }
 
       function getItemHeight(element) {
-         // Make elements height 100%
+         // Make elements height 100% to get 'natural' height
          element.style.height = '100%';
-         // Get the elements 'natural' height
+         // Get the 'natural' height
          const scrollHeight = element.scrollHeight + 'px';
-         // Remove the height style value
-         element.style.height = '';
+         // Change the height to a value that can it can be changed from (cannot change from 100%)
+         element.style.height = element.scrollHeight + 'px';
          // Return the elements 'natural' height
          return scrollHeight;
       }
-
   </script>
-
 </body>
 </html>
