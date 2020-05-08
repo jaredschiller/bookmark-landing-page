@@ -9,6 +9,8 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Frontend Mentor | Bookmark landing page</title>
 
+  
+
 </head>
 
 <body>
@@ -47,9 +49,11 @@
         <h1 class="heading-primary">A Simple Bookmark Manager</h1>
 
         <p class="paragraph u-margin-top-smedium u-margin-bottom-smedium">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
-
-        <a href="#" class="btn btn--blue btn--taller u-letterspacing-small u-margin-right-small">Get it on Chrome</a>
-        <a href="#" class="btn btn--grey btn--taller ">Get it on Firefox</a>
+         <div>
+            <a href="#" class="btn btn--blue btn--taller u-letterspacing-small u-margin-right-small">Get it on Chrome</a>
+            <a href="#" class="btn btn--grey btn--taller ">Get it on Firefox</a>
+         </div>
+        
 
       </div>
 
@@ -78,13 +82,13 @@
         <ul class="section-features-top__menu-box u-center-text">
           
           <li class="feature-menu-item feature-menu-item--active">
-            <a href="#" class="feature-menu-item__link">Simple Bookmarking</a>
+            <a href="#" id="feature-link-1" class="feature-menu-item__link">Simple Bookmarking</a>
           </li>
           <li class="feature-menu-item">
-            <a href="#" class="feature-menu-item__link">Speedy Searching</a>
+            <a href="#" id="feature-link-2" class="feature-menu-item__link">Speedy Searching</a>
           </li>
           <li class="feature-menu-item">
-            <a href="#" class="feature-menu-item__link">Easy Sharing</a>
+            <a href="#" id="feature-link-3" class="feature-menu-item__link">Easy Sharing</a>
           </li>
 
         </ul>
@@ -99,73 +103,19 @@
    
         <div class="decorative-image decorative-image--left">
 
-            <img class="decorative-image__image" src="/images/illustration-features-tab-1.svg" alt="">
+            <img id="feature-img" class="decorative-image__image" src="./images/illustration-features-tab-1.svg" alt="">
             <div class="decorative-image__decoration-box"></div>
   
         </div>
 
         <div class="section-features-bottom__text-box">
-            <h2 class="heading-secondary">Bookmark in one click</h2>
-            <p class="paragraph u-margin-top-smedium u-margin-bottom-smedium">Organize your bookmarks however you like. Our Simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+            <h2 id="feature-title" class="heading-secondary">Bookmark in one click</h2>
+            <p id="feature-text" class="paragraph u-margin-top-smedium u-margin-bottom-smedium">Organize your bookmarks however you like. Our Simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
             <button class="btn btn--blue btn--normal">More Info</button>
         </div>
         
       </div>
     </div><!-- END FEATURES (BOTTOM) SECTION .background-container -->
-
-
-
-
-  <!-- FEATURES (BOTTOM) SECTION -->
-  <div class="background-container background-container--clear u-margin-bottom-xxl">
-    <div class="section-features-bottom">
-
- 
-      <div class="decorative-image decorative-image--left">
-
-          <img class="decorative-image__image" src="/images/illustration-features-tab-2.svg" alt="">
-          <div class="decorative-image__decoration-box"></div>
-
-      </div>
-
-      <div class="section-features-bottom__text-box">
-          <h2 class="heading-secondary">Bookmark in one click</h2>
-          <p class="paragraph u-margin-top-smedium u-margin-bottom-smedium">Organize your bookmarks however you like. Our Simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-          <button class="btn btn--blue btn--normal">More Info</button>
-      </div>
-      
-    </div>
-  </div><!-- END FEATURES (BOTTOM) SECTION .background-container -->
-
-
-
-    <!-- FEATURES (BOTTOM) SECTION -->
-    <div class="background-container background-container--clear u-margin-bottom-xxl">
-      <div class="section-features-bottom">
-  
-   
-        <div class="decorative-image decorative-image--left">
-  
-            <img class="decorative-image__image" src="/images/illustration-features-tab-3.svg" alt="">
-            <div class="decorative-image__decoration-box"></div>
-  
-        </div>
-  
-        <div class="section-features-bottom__text-box">
-            <h2 class="heading-secondary">Bookmark in one click</h2>
-            <p class="paragraph u-margin-top-smedium u-margin-bottom-smedium">Organize your bookmarks however you like. Our Simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-            <button class="btn btn--blue btn--normal">More Info</button>
-        </div>
-        
-      </div>
-    </div><!-- END FEATURES (BOTTOM) SECTION .background-container -->
-  
-
-
-
-
-
-
 
 
 
@@ -187,7 +137,7 @@
             <div class="browser-card__top-box">
 
               <div class="browser-card__image-box">
-                <img src="/images/logo-chrome.svg" alt="" class="browser-card__image">
+                <img src="./images/logo-chrome.svg" class="browser-card__image">
               </div>
   
               <div class="browser-card__text-box">
@@ -198,7 +148,7 @@
             </div>
 
             <div class="dots-box">
-                <img src="/images/bg-dots.svg" alt="" class="browser-card__dots">
+                <img src="./images/bg-dots.svg" alt="" class="browser-card__dots">
             </div>
 
             <div class="browser-card__btn-box">
@@ -213,7 +163,7 @@
             <div class="browser-card__top-box">
 
               <div class="browser-card__image-box">
-                <img src="/images/logo-firefox.svg" alt="" class="browser-card__image">
+                <img src="./images/logo-firefox.svg" alt="" class="browser-card__image">
               </div>
 
               <div class="browser-card__text-box">
@@ -224,7 +174,7 @@
             </div>
 
             <div class="dots-box">
-                <img src="/images/bg-dots.svg" alt="" class="browser-card__dots">
+                <img src="./images/bg-dots.svg" alt="" class="browser-card__dots">
             </div>
 
             <div class="browser-card__btn-box">
@@ -239,7 +189,7 @@
             <div class="browser-card__top-box">
 
               <div class="browser-card__image-box">
-                <img src="/images/logo-opera.svg" alt="" class="browser-card__image">
+                <img src="./images/logo-opera.svg" alt="" class="browser-card__image">
               </div>
 
               <div class="browser-card__text-box">
@@ -250,7 +200,7 @@
             </div>
 
             <div class="dots-box">
-                <img src="/images/bg-dots.svg" alt="" class="browser-card__dots">
+                <img src="./images/bg-dots.svg" alt="" class="browser-card__dots">
             </div>
 
             <div class="browser-card__btn-box">
@@ -276,7 +226,53 @@
           <p class="paragraph paragraph--h2">Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>  
         </div>
 
-        <div class="section-faq__accordion-box"></div>
+        <!-- <div class="section-faq__accordion-box"> -->
+           <ul class="accordion">
+              <li class="accordion__item">
+
+                 <div class="accordion__top">
+                  <p class="accordion__question">What is Bookmark?</p>
+                  <svg class="accordion__arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
+                 </div>
+                 
+                 <p class="accordion__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+
+              </li>
+
+              <li class="accordion__item">
+
+               <div class="accordion__top">
+                <p class="accordion__question">How can I request a new browser?</p>
+                <svg class="accordion__arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
+               </div>
+               
+               <p class="accordion__answer">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+
+            </li>
+
+            <li class="accordion__item">
+
+               <div class="accordion__top">
+                <p class="accordion__question">Is there a mobile app?</p>
+                <svg class="accordion__arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
+               </div>
+               
+               <p class="accordion__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+
+            </li>
+
+            <li class="accordion__item">
+
+               <div class="accordion__top">
+                <p class="accordion__question">What about other Chromium browsers?</p>
+                <svg class="accordion__arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
+               </div>
+               
+               <p class="accordion__answer">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.</p>
+
+            </li>
+           </ul>
+        <!-- </div> -->
 
       </div>
 
@@ -326,13 +322,119 @@
       </ul>
 
       <ul class="navigation__social-list">
-        <li class="navigation__item"><a href ="#" class="navigation__link"><img class="navigation__social-icon" src="images/icon-facebook.svg"></a></li>
-        <li class="navigation__item"><a href ="#" class="navigation__link"><img class="navigation__social-icon" src="images/icon-twitter.svg"></a></li>
+        <li class="navigation__item">
+           <a href ="#" class="navigation__link">
+            <svg class="navigation__social-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill="#FFF" fill-rule="evenodd" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
+            </a>
+         </li>
+        <li class="navigation__item">
+           <a href ="#" class="navigation__link">
+            <svg class="navigation__social-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="20"><path fill="#FFF" fill-rule="evenodd" d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"/></svg>
+            </a>
+         </li>
       </ul>
 
     </nav>
 
   </div><!-- END FOOTER .background-container -->
+
+
+  <script language="javascript" type="text/javascript">
+
+      // FEATURES SECTION CODE
+      // ================================================================
+      const featureImg     = document.querySelector("#feature-img"),
+            featureTitle   = document.querySelector("#feature-title"),
+            featureText    = document.querySelector("#feature-text"),
+            featuresTitle  = ["Bookmark in one click","Intelligent search","Share your bookmarks"],
+            featuresText   = [
+               "Organize your bookmarks however you like. Our Simple drag-and-drop interface gives you complete control over how you manage your favourite sites.",
+               "Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.",
+               "Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button"
+            ];
+
+      document.querySelector('.section-features-top__menu-box').addEventListener('click', (event) => {
+         event.preventDefault();
+         if (event.target.matches('.feature-menu-item__link')) {
+            const link        = event.target,
+                  linkIdNum   = link.id.substr(link.id.length - 1),
+                  newImgSrc = `./images/illustration-features-tab-${linkIdNum}.svg`;
+                  
+            featureImg.src = newImgSrc;
+            featureTitle.innerHTML = featuresTitle[linkIdNum - 1];
+            featureText.innerHTML = featuresText[linkIdNum - 1];
+
+            // Find the li element with the active state and remove the active state
+            document.querySelector('.feature-menu-item--active').classList.remove("feature-menu-item--active");
+
+            // Find the li element closest to the click event and add the active state
+            event.target.closest(".feature-menu-item").classList.add("feature-menu-item--active");
+
+         }
+      });
+
+   // FAQ SECTION CODE
+   // ================================================================
+      const accordion = document.querySelector('.accordion'),
+            allItems = document.querySelectorAll('.accordion__item');
+
+      // Event handler when user clicks FAQ list
+      accordion.addEventListener('click', (event) => {
+         const currentItem = event.target.closest('.accordion__item'),
+               itemArrow   = currentItem.querySelector('.accordion__arrow'),
+               fullHeight  = getItemHeight(currentItem);
+
+         // If item is already 'open', close it...
+         if (currentItem.classList.contains('open')) {
+            currentItem.style.height = currentItem.scrollHeight + 'px';
+
+            // Reset styling of current element and remove 'open' class (setTimeout is necessary because JS gets ahead of the DOM update)
+            window.setTimeout(() => {
+               currentItem.style.height = '7rem';
+               currentItem.querySelector('.accordion__arrow').style.transform = 'rotate(0deg)';
+               currentItem.querySelector('.accordion__arrow path').setAttribute('style', 'stroke:#5267DF');
+               currentItem.classList.remove('open');
+            },10)
+         // else, 
+         } else {
+            // Reset styling and remove 'open' class for all other items
+            resetStyles(allItems, currentItem);
+            // Expand height of current item
+            currentItem.style.height = fullHeight;
+            // Change the styles of the arrow icon
+            itemArrow.style.transform = 'rotate(-180deg)';
+            itemArrow.querySelector('path').setAttribute('style', 'stroke: hsl(0, 94%, 66%)');
+            // Add the 'open' class
+            currentItem.classList.add('open');
+         }
+
+         
+
+      })
+
+      function resetStyles(elements, current) {
+         for (let item of elements) {
+            if (item != current) {
+               item.style.height = '7rem';
+               item.querySelector('.accordion__arrow').style.transform = 'rotate(0deg)';
+               item.querySelector('.accordion__arrow path').setAttribute('style', 'stroke:#5267DF');
+               item.classList.remove('open');
+            }
+         }
+      }
+
+      function getItemHeight(element) {
+         // Make elements height 100%
+         element.style.height = '100%';
+         // Get the elements 'natural' height
+         const scrollHeight = element.scrollHeight + 'px';
+         // Remove the height style value
+         element.style.height = '';
+         // Return the elements 'natural' height
+         return scrollHeight;
+      }
+
+  </script>
 
 </body>
 </html>

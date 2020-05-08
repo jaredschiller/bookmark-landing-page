@@ -13,5 +13,15 @@ $color-black: rgba(32, 42, 69, 1);
 $color-white: #fff;
 
 //Font
-$default-font-size: 1.8rem; 
+$default-font-size: 1.8rem;
+
+// MEDIA BREAKPOINTS
+$bp-xl: 81.25em;     // 1300px
+$bp-lg: 75em;        // 1200px
+$bp-md: 68.75em;       // 1100px
+$bp-smd: 59.375em;      // 950px
+$bp-sm: 31.25em;       // 500px
+$bp-xs: 25em;        // 400px
+$bp-xxs: 21.875em;   // 350px
+
 

@@ -1,23 +1,35 @@
 .section-features-top {
    max-width: 1440px; //change to em?
    margin: 0 auto;
+   padding-left: 5rem;
+   padding-right: 5rem;
 
    &__menu-box {
       display: flex;
       justify-content: center;
       max-width: 74rem;
       margin: 0 auto;
+
+      @media only screen and (max-width: 600px) {
+         flex-direction: column;
+      }
    }
 
 }
 
 .section-features-bottom {
-   max-width: 1100px; //change to em?
+   max-width: 1440px; //change to em?
    margin: 0 auto;
    display: flex;
    justify-content: space-between;
    align-items: center;
    background-color: $color-white;
+   padding-left: 5rem;
+   padding-right: 5rem;
+
+   @media only screen and (max-width: 850px) {
+      flex-direction: column;
+   }
 
    &::before {
       content: "";
@@ -26,13 +38,26 @@
       bottom: 0;
       left: 0;
       height: 70%;
-      width: 50%;
+      width: 20%;
       z-index: -1;
     }
 
    &__text-box {
       max-width: 45rem;
       transform: translateY(-4.5rem);
+      margin-right: 15rem;
+      margin-left: 5rem;
+
+      @media only screen and (max-width: 850px) {
+         margin-top: 12rem;
+         margin-right: 0;
+         margin-left: 0;
+
+         display: flex;
+         flex-direction: column;
+         text-align: center;
+         align-items: center;
+     }
    }
 }
 
@@ -46,17 +71,26 @@
       justify-content: space-evenly;
       margin: 0 auto;
       max-width: 92rem;
+
+      @media only screen and (max-width: $bp-smd) {
+         flex-direction: column;
+         align-items: center;
+      }
    }
 }
 
 
 
 .section-faq {
-   display: flex;
-   justify-content: center;
+   @include max-width-content;
+   padding: 0;
 
+   // &__accordion-box {
+   //    margin: 0 auto;
+   //    max-width: 62rem;
 
-
+   //    border: 1px solid green;
+   // }
 }
 
 

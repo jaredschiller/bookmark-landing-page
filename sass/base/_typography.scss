@@ -11,6 +11,11 @@ body {
   font-weight: 500;
   color: $color-black;
   line-height: 1.2;
+
+  @media only screen and (max-width: $bp-md) {
+   font-size: 4.2rem;
+
+  }
 }
 
 .heading-secondary {

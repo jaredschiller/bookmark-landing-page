@@ -15,6 +15,7 @@
 
   &--bottom {
     justify-content: flex-start;
+    align-items: center;
     color: $color-white;
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
@@ -24,7 +25,7 @@
     
   }
 
-  & svg {
+  &__logo-image {
     margin-right: 6rem;
     transform: translateY(.2rem);
   }
@@ -38,6 +39,10 @@
 
     &:not(:last-child) {
       margin-right: 4rem;
+
+      @media only screen and (max-width: $bp-md) {
+         margin-right: 2rem;
+      }
     }
   }
 
@@ -48,10 +53,23 @@
     text-decoration: none;
     text-transform: uppercase;
     color: inherit;
+    transition: color .2s ease;
+
+    &:hover {
+       color: $primary-soft-red;
+    }
   }
 
   &__social-list {
     margin-left: auto;
+  }
+
+  &__social-icon {
+     &:hover {
+        & path {
+         fill: $primary-soft-red;
+        }
+     }
   }
 }//End .navigation
 

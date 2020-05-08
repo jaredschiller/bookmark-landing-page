@@ -45,5 +45,5 @@ Some library suggestions can be found below:
 ## Feature image dimensions:
 
 Img 1: width="536" height="346" //1.549132947976879
-Img 2: width="478" height="416"
-Img 3: width="440" height="380"
+Img 2: width="478" height="416" //1.149038461538462
+Img 3: width="440" height="380" //1.157894736842105

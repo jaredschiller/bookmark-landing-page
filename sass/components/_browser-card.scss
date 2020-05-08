@@ -1,13 +1,25 @@
 .browser-card {
-   box-shadow: 0 .8rem 1.5rem rgba(0, 0, 0, 0.08);
+   box-shadow: 0rem .6rem 1.5rem rgba(0, 0, 0, .3);
    border-radius: 2rem;
-   height: 36rem;
+   height: 38rem;
 
    display: flex;
    flex-direction: column;
 
+   @media only screen and (max-width: $bp-xl) {
+      height: 40rem;
+   }
+
+   @media only screen and (max-width: $bp-md) {
+      height: 47rem;
+   }
+
    &:not(:last-child) {
       margin-right: 4rem;
+
+      @media only screen and (max-width: $bp-smd) {
+         margin-right: 0;
+      }
    }
 
    &--up {
