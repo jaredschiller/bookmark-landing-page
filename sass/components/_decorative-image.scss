@@ -14,7 +14,7 @@
       height: 70%;
       background-color: $primary-soft-blue;
 
-      @media only screen and (max-width: 850px) {
+      @media only screen and (max-width: $bp-smd) {
          left: 20%;
          width: 100%;
      }
@@ -23,9 +23,10 @@
    &--right {
       padding-right: 5rem; //right only
 
-      @media only screen and (max-width: 850px) {
+      @media only screen and (max-width: $bp-smd) {
          padding: 0;
-     }
+      }
+
       & img {
          width: 100%;
       }
@@ -35,9 +36,8 @@
          border-top-left-radius: 200px; //right only
          border-bottom-left-radius: 200px; //right only
 
-         @media only screen and (max-width: 850px) {
-            right: 20%;
-            width: 100%;
+         @media only screen and (max-width: $bp-smd) {
+            width: 93%;
         }
       }
 
@@ -52,7 +52,7 @@
          max-height: 48rem;
       }
 
-     @media only screen and (max-width: 850px) {
+     @media only screen and (max-width: $bp-smd) {
       padding-left: 0;
       }
 
@@ -72,9 +72,9 @@
          left: -20%;
          width: 100%;
 
-         @media only screen and (max-width: 850px) {
-            left: -35%;
-            width: 120%;
+         @media only screen and (max-width: $bp-smd) {
+            left: -45%;
+            width: 130%;
             height: 80%;
             bottom: -5%;
         }

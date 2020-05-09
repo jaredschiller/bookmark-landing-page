@@ -26,7 +26,7 @@
     max-width: 57rem;
     transform: translateY(-2rem);
 
-    @media only screen and (max-width: 850px) {
+    @media only screen and (max-width: $bp-smd) {
        display: flex;
        flex-direction: column;
        align-items: center;
@@ -37,7 +37,7 @@
       }
   }
 
-  @media only screen and (max-width: 850px) {
+  @media only screen and (max-width: $bp-smd) {
    flex-direction: column-reverse;
    
    }

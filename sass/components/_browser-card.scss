@@ -10,14 +10,14 @@
       height: 40rem;
    }
 
-   @media only screen and (max-width: $bp-md) {
+   @media only screen and (max-width: $bp-lg) {
       height: 47rem;
    }
 
    &:not(:last-child) {
       margin-right: 4rem;
 
-      @media only screen and (max-width: $bp-smd) {
+      @media only screen and (max-width: $bp-md) {
          margin-right: 0;
       }
    }

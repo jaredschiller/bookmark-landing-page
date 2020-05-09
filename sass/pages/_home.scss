@@ -27,7 +27,7 @@
    padding-left: 5rem;
    padding-right: 5rem;
 
-   @media only screen and (max-width: 850px) {
+   @media only screen and (max-width: $bp-smd) {
       flex-direction: column;
    }
 
@@ -48,7 +48,7 @@
       margin-right: 15rem;
       margin-left: 5rem;
 
-      @media only screen and (max-width: 850px) {
+      @media only screen and (max-width: $bp-smd) {
          margin-top: 12rem;
          margin-right: 0;
          margin-left: 0;
@@ -72,7 +72,7 @@
       margin: 0 auto;
       max-width: 92rem;
 
-      @media only screen and (max-width: $bp-smd) {
+      @media only screen and (max-width: $bp-md) {
          flex-direction: column;
          align-items: center;
       }
