@@ -604,9 +604,7 @@ body {
   background-color: #fff; }
   @media only screen and (max-width: 53.125em) {
     .section-features-bottom {
-      flex-direction: column;
-      padding-left: 4rem;
-      padding-right: 4rem; } }
+      flex-direction: column; } }
   .section-features-bottom::before {
     content: "";
     background-color: #5368df;
@@ -624,8 +622,8 @@ body {
     @media only screen and (max-width: 53.125em) {
       .section-features-bottom__text-box {
         margin-top: 10rem;
-        margin-right: 0;
-        margin-left: 0;
+        margin-right: 4rem;
+        margin-left: 4rem;
         display: flex;
         flex-direction: column;
         text-align: center;
