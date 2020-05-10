@@ -16,6 +16,11 @@ body {
    font-size: 4.2rem;
 
   }
+
+  @media only screen and (max-width: $bp-xs) {
+   font-size: 3.5rem;
+
+  }
 }
 
 .heading-secondary {
@@ -26,6 +31,10 @@ body {
   &--white {
     color: $color-white
   }
+
+  @media only screen and (max-width: $bp-xs) {
+   font-size: 2.8rem;
+}
 }
 
 .heading-tertiary {
