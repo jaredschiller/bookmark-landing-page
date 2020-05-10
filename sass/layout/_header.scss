@@ -1,6 +1,8 @@
 .header {
+   max-width: 1440px; //change to em?
+   margin: 0 auto;
 
-  @include max-width-content;
+
   padding-right: 0;
   display: flex;
   flex-direction: row;
@@ -8,27 +10,31 @@
   align-items: center;
   background-color: $color-white;
 
+
   
 
-//   &::before {
-//     content: "";
-//     background-color: $primary-soft-blue;
-//     position: absolute;
-//     bottom: 0;
-//     right: 0;
-//     height: 70%;
-//     width: 50%;
-//     z-index: -1;
+  &::before {
+    content: "";
+    background-color: $primary-soft-blue;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 75%;
+    width: 50%;
+    z-index: -1;
 
-//   }
+  }
     
   
   &__text-box {
-    max-width: 57rem;
+    max-width: 70rem;
     transform: translateY(-2rem);
+    padding-left: 17rem;
 
       @media only screen and (max-width: $bp-smd) {
          display: flex;
+         padding-left: 4rem;
+         padding-right: 4rem;
          flex-direction: column;
          align-items: center;
          text-align: center;
