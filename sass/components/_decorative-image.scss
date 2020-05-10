@@ -1,0 +1,102 @@
+.decorative-image {
+   position: relative;
+   z-index: 1;
+
+
+   &__decoration-box {
+      position: absolute;
+      bottom: 0;
+      z-index: -1;
+      background-color: $primary-soft-blue;
+   }
+
+   &--right {
+
+      @media only screen and (max-width: $bp-smd) {
+         display: flex;
+         justify-content: center;
+         width: 100%;
+      }
+
+      @media only screen and (max-width: $bp-smd) {
+         padding: 0;
+      }
+
+      & img {
+         width: 100%;
+
+
+         @media only screen and (max-width: $bp-smd) {
+            width: 80%;
+         }
+
+         @media only screen and (max-width: $bp-sm) {
+            width: 85%;
+         }
+
+         @media only screen and (max-width: $bp-xs) {
+            width: 95%;
+         }
+      }
+
+      & div {
+         display: block;
+         width: 74%;
+         height: 75%;
+         right: 0; //right only
+         border-top-left-radius: 200px; //right only
+         border-bottom-left-radius: 200px; //right only
+
+         @media only screen and (max-width: $bp-smd) {
+            
+        }
+      }
+
+     
+   }
+
+   &--left {
+      // max-height: 42rem;
+      padding-left: 10rem;
+
+     @media only screen and (max-width: $bp-smd) {
+      display: flex;
+      justify-content: center;
+      padding-left: 0;
+      width: 100%;
+      }
+
+      & img {
+         width: 100%;
+         padding-bottom: 7rem; //left only
+
+         @media only screen and (max-width: $bp-smd) {
+            padding-bottom: 6rem;
+            width: 75%;
+         }
+
+         @media only screen and (max-width: $bp-sm) {
+            width: 80%;
+         }
+
+         @media only screen and (max-width: $bp-xs) {
+            padding-bottom: 4rem;
+         }
+      }
+
+      & div {
+         display: block;
+         width: 80%;
+         height: 84%;
+         left: 0; //left only
+         border-top-right-radius: 200px; //left only
+         border-bottom-right-radius: 200px; //left only
+
+         @media only screen and (max-width: $bp-smd) {
+
+        }
+      }
+   }
+}
+
+   

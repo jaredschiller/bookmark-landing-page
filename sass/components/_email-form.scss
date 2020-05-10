@@ -1,0 +1,49 @@
+.email-form {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+    font-family: inherit;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin: 0 auto;
+
+    @media only screen and (max-width: $bp-xs) {
+      flex-direction: column;
+   }
+
+
+  &__email {
+  padding: 1.7rem 11rem 1.6rem 2rem;
+  margin-right: 1rem;
+  border-radius: .5rem;
+  border: none;
+  font-size: inherit;
+  font-weight: inherit;
+  color: $color-black;
+  
+    &::placeholder {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: rgba($greyish-blue, .6);
+    }
+
+    @media only screen and (max-width: $bp-xs) {
+      margin-bottom: 2rem;
+      margin-right: 0;
+      width: 100%;
+      max-width: 38rem;
+   }
+  }//End .email-form__email
+
+  &__submit {
+    padding: 1.5rem 2rem;
+    font-size: 1.35rem;
+
+    @media only screen and (max-width: $bp-xs) {
+      width: 100%;
+      max-width: 38rem;
+   }
+  }
+}//End .email-form
